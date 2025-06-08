@@ -1,0 +1,37 @@
+{
+  "name": "eplang-syntax",
+  "displayName": "EPLang Syntax",
+  "version": "0.1.1",
+  "publisher": "arampetrosyan",
+  "icon": "images/epl_logo.png",
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "uclouvain",
+    "eplang",
+    "linfo2132"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "eplang",
+        "aliases": [
+          "EPLang",
+          "eplang"
+        ],
+        "extensions": [
+          ".eplang"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "eplang",
+        "scopeName": "source.eplang",
+        "path": "./syntaxes/eplang.tmLanguage.json"
+      }
+    ]
+  }
+}

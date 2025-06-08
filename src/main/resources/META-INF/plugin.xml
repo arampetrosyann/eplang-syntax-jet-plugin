@@ -1,0 +1,31 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <id>com.arampetrosyann.eplangSyntax</id>
+    <name>EPLang Syntax</name>
+    <vendor url="https://github.com/arampetrosyann">Aram Petrosyan</vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+    <depends>org.jetbrains.plugins.textmate</depends>
+
+    <resource-bundle>messages.OptionsBundle</resource-bundle>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <fileType
+                name="EPLang"
+                language="EPLang"
+                extensions="eplang"
+                implementationClass="com.arampetrosyann.eplangSyntax.EPLangFileType"
+                fieldName="INSTANCE"
+        />
+        <editorHighlighterProvider
+                filetype="EPLang"
+                implementationClass="org.jetbrains.plugins.textmate.language.syntax.highlighting.TextMateEditorHighlighterProvider"
+        />
+        <lang.syntaxHighlighterFactory
+                language="EPLang"
+                implementationClass="org.jetbrains.plugins.textmate.language.syntax.highlighting.TextMateSyntaxHighlighterFactory"
+        />
+        <textmate.bundleProvider implementation="com.arampetrosyann.eplangSyntax.EPLangTextMateBundleProvider" />
+    </extensions>
+</idea-plugin>
