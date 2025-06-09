@@ -19,5 +19,10 @@ The plugin is mainly for [UCLouvain](https://www.uclouvain.be/fr) students to be
 
 <!-- Plugin description end -->
 
+## References
+
+- [Language Grammar Rules](https://macromates.com/manual/en/language_grammars)
+- [Custom Language Support](https://plugins.jetbrains.com/docs/intellij/custom-language-support.html)
+
 [file:highlighted_code.png]: ./.github/readme/highlighted_code.png
 [keep-a-changelog]: https://keepachangelog.com
